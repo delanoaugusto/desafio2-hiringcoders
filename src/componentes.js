@@ -77,7 +77,7 @@ const Main = () => {
         localStorage.setItem('cadastroCliente', idClientes);
 
         swal('Cadastro realizado!', '', 'success');
-    
+               
       };
 
       const handleCadastroProduto = (e) => {
@@ -141,6 +141,8 @@ const Main = () => {
                 <input className='inputmargin' type="text" id="cidade" name="cidade" placeholder="Cidade" required/>
                 <input className='inputmargin' type="text" id="cep" name="cep" placeholder="CEP Ex:00000-000" maxLength="9" required/>
                 <input className='inputmargin' type="text" id="estado" name="estado" placeholder="UF" maxLength="2" required/>
+                <br></br>
+                <input className='inputmargin' type="reset" defaultValue="Reset" value='Limpar Formulário'  />  
                 <Button className='botaocadastrocliente' variant="primary" type='submit'>Cadastrar</Button>
             </form>
            
@@ -173,6 +175,8 @@ const Main = () => {
                 <input className='inputmargin' type="number" id="preco" name="preco" placeholder="Preço" required/>
                 <br></br>
                 <textarea className='inputmargin' name="descricao" id="descricao" cols="35" rows="5" placeholder="Informações técnicas" required></textarea>
+                <br></br>
+                <input className='inputmargin' type="reset" defaultValue="Reset" value='Limpar Formulário'  />  
                 <Button className='botaocadastrocliente' variant="primary" type='submit'>Cadastrar</Button>
             </form>
            
